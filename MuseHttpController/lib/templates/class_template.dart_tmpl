@@ -1,0 +1,20 @@
+{{#imports}}import '{{.}}';
+{{/imports}}
+
+class {{ className }} {
+{{#methods}}
+  {{{ returnType }}} {{ name }}({{#parameters}}{{type}} {{name}}{{^last}},{{/last}}{{/parameters}}) {
+    Map requestHeaders = {};
+    {{#requestHeaders}}
+    requestHeaders['{{ name }}'] = {{ value }};
+    {{/requestHeaders}}
+    HttpRequest.request('{{ url }}',
+      method: '{{ method }}',
+      responseType: 'json',
+      mimeType: 'application/json',
+      sendData: {{ data }},
+      requestHeaders: requestHeaders
+    );
+  }
+{{/methods}}
+}

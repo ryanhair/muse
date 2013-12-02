@@ -1,0 +1,6 @@
+name:  muse_controller
+description: Base controller implementation for Muse framework 
+
+dependencies:
+  muse:
+    path: ../Muse

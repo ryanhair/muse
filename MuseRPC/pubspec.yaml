@@ -1,0 +1,6 @@
+name:  muse_rpc
+description: RPC for Muse framework 
+
+dependencies:
+  muse:
+    path: ../Muse

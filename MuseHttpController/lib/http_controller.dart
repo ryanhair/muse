@@ -1,6 +1,6 @@
 library muse.controller.http;
 
-import 'package:muse_controller/controller.dart';
+import 'package:muse_core/muse.dart';
 import 'request_mappers/request_mapper.dart';
 import 'response_mappers/response_mapper.dart';
 import 'response_exceptions/response_exception.dart';
@@ -22,7 +22,7 @@ part 'produces.dart';
 class HttpController extends Controller {
   static void init([String host = 'localhost', int port = 8000]) {
     Controller.init();
-    HttpRequestDispatcher.init(Controller.controllers);
+    HttpRequestDispatcher.init(Injector.getNamespace('controllers'));
     HttpServer.bind(host, port).then((HttpServer server) {
       /*
        * Whenever we get a request in, we try to find a controller with a request mapping that matches

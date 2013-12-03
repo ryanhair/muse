@@ -1,12 +1,7 @@
-name:  muse_mongo_repo
-description: Mongo repository implementation for Muse framework 
-
+name: muse_mongo_repo
+description: Mongo repository implementation for Muse framework
 dependencies:
-  muse:
-    path: ../Muse
-  muse_repo:
-    path: ../MuseRepo
-  muse_model:
-    path: ../MuseModel
   mongo_dart: any
+  muse_core:
+    path: ../MuseCore
   uuid: any

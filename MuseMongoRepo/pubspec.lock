@@ -29,21 +29,9 @@ packages:
     description: mongo_dart_query
     source: hosted
     version: "0.1.11"
-  muse:
+  muse_core:
     description:
-      path: "/Users/ryanhair/Projects/Muse/MuseMongoRepo/../Muse"
-      relative: true
-    source: path
-    version: "0.0.0"
-  muse_model:
-    description:
-      path: "/Users/ryanhair/Projects/Muse/MuseMongoRepo/../MuseModel"
-      relative: true
-    source: path
-    version: "0.0.0"
-  muse_repo:
-    description:
-      path: "/Users/ryanhair/Projects/Muse/MuseMongoRepo/../MuseRepo"
+      path: "../MuseCore"
       relative: true
     source: path
     version: "0.0.0"

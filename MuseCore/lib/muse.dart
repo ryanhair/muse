@@ -35,7 +35,7 @@ class Muse {
       }
     }
     
-    for(var value in Injector.getNamespace()) {
+    for(var value in Injector.getNamespace().values) {
       InstanceMirror mirror = reflect(value);
       mirror.type.declarations.keys.where((Symbol s) => mirror.type.declarations[s] is VariableMirror)
         .forEach((Symbol s) {

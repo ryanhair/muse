@@ -1,10 +1,6 @@
 name: muse_http_controller
 description: Http controller implementation for Muse framework
 dependencies:
-  muse:
-    path: ../Muse
-  muse_controller:
-    path: ../MuseController
-  muse_model:
-    path: ../MuseModel
+  muse_core:
+    path: ../MuseCore
   mustache: any

@@ -1,0 +1,4 @@
+name: muse_core
+description: Foundation for the Muse Framework
+dependencies:
+  unittest: any

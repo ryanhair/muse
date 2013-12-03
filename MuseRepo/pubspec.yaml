@@ -1,6 +1,0 @@
-name:  muse_repo
-description: Base repository implementation for Muse framework 
-
-dependencies:
-  muse:
-    path: ../Muse

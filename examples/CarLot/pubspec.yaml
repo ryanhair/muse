@@ -1,0 +1,13 @@
+name: car_lot
+description: A sample command-line application
+dependencies:
+  angular: any
+  browser: any
+  js: any
+  muse_core:
+    path: ../Muse/MuseCore
+  muse_http_controller:
+    path: ../Muse/MuseHttpController
+  muse_mongo_repo:
+    path: ../Muse/MuseMongoRepo
+  uuid: any

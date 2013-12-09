@@ -110,7 +110,7 @@ class MongoRepository<T> extends MongoRepositoryBase {
   
   Future<String> _create(T item) {
     _checkErrors();
-    var data = Model.convert(item);
+    var data = Model.toPrimitive(item);
     data.remove(MirrorSystem.getName(idProp));
     data['_id'] = uuidGen.v4();
     return collection.insert(data).then((_) {
@@ -144,7 +144,7 @@ class MongoRepository<T> extends MongoRepositoryBase {
       });
     }
     else {
-      var data = Model.convert(item);
+      var data = Model.toPrimitive(item);
       data['_id'] = id;
       data.remove(MirrorSystem.getName(idProp));
       return collection.save(data).then((_) {

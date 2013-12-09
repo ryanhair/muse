@@ -1,9 +1,9 @@
 part of car_lot;
 
-@Controller()
+@HttpController()
 @RequestMapping('/cars')
 class CarController {
-  @Inject
+  @Inject()
   CarService carService;
   
 //  @Consumes(const ['application/json', 'text/xml'])

@@ -1,6 +1,8 @@
 name: muse_http_controller
+author: Ryan Hair <ryandhair@gmail.com>
+version: 0.1.2
+homepage: https://github.com/ryanhair/muse
 description: Http controller implementation for Muse framework
+documentation: https://github.com/ryanhair/muse
 dependencies:
-  muse_core:
-    path: ../MuseCore
-  mustache: any
+  muse_core: 0.1.0

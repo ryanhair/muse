@@ -2,12 +2,6 @@
 # See http://pub.dartlang.org/doc/glossary.html#lockfile
 packages:
   muse_core:
-    description:
-      path: "../MuseCore"
-      relative: true
-    source: path
-    version: "0.0.0"
-  mustache:
-    description: mustache
+    description: muse_core
     source: hosted
-    version: "0.1.6"
+    version: "0.1.0"

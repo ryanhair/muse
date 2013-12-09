@@ -40,7 +40,7 @@ class Muse {
       mirror.type.declarations.keys.where((Symbol s) => mirror.type.declarations[s] is VariableMirror)
         .forEach((Symbol s) {
           var vm = mirror.type.declarations[s];
-          if(vm.metadata.any((m) => m.reflectee == Inject)) {
+          if(vm.metadata.any((m) => m.reflectee is Inject)) {
             ClassMirror type = vm.type;
             mirror.setField(s, Injector.getValue(type.reflectedType));
           }

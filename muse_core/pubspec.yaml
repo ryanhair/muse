@@ -1,4 +1,8 @@
 name: muse_core
+author: Ryan Hair <ryandhair@gmail.com>
+version: 0.1.0
+homepage: https://github.com/ryanhair/muse
 description: Foundation for the Muse Framework
+documentation: https://github.com/ryanhair/muse
 dev_dependencies:
   unittest: any

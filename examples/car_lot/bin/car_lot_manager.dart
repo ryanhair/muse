@@ -3,8 +3,8 @@ library car_lot;
 import 'dart:io';
 import 'dart:async';
 import 'package:muse_core/muse.dart';
-import 'package:muse_http_controller/http_controller.dart';
-import 'package:muse_mongo_repo/mongo_repo.dart';
+import 'package:muse_http_controller/muse_http_controller.dart';
+import 'package:muse_mongo_repo/muse_mongo_repo.dart';
 import 'package:car_lot/model/car_lot.dart';
 
 part 'controller/car_controller.dart';

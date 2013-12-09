@@ -5,9 +5,9 @@ dependencies:
   browser: any
   js: any
   muse_core:
-    path: ../Muse/MuseCore
+    path: ../../muse_core
   muse_http_controller:
-    path: ../Muse/MuseHttpController
+    path: ../../../Muse/muse_http_controller
   muse_mongo_repo:
-    path: ../Muse/MuseMongoRepo
+    path: ../../../Muse/muse_mongo_repo
   uuid: any

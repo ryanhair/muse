@@ -20,9 +20,19 @@ part 'consumes.dart';
 part 'produces.dart';
 
 class HttpController extends Controller {
+  const HttpController();
+  
   static void init([String host = 'localhost', int port = 8000]) {
     Controller.init();
-    HttpRequestDispatcher.init(Injector.getNamespace('controllers'));
+    
+    var controllers = Injector.getNamespace('controllers');
+    var httpControllers = {};
+    controllers.forEach((Type t, dynamic controller) {
+      if(reflectClass(t).metadata.any((m) => m.reflectee is HttpController)) {
+        httpControllers[t] = controller;
+      }
+    });
+    HttpRequestDispatcher.init(httpControllers);
     HttpServer.bind(host, port).then((HttpServer server) {
       /*
        * Whenever we get a request in, we try to find a controller with a request mapping that matches
@@ -30,7 +40,9 @@ class HttpController extends Controller {
        * the request.  If we find one, we then setup all the data that handler needs (based on
        * metadata), and invoke that handler with necessary data.
        */
-      server.listen((HttpRequest request) => new HttpRequestDispatcher(request));
+      server.listen((HttpRequest request)  {
+        new HttpRequestDispatcher(request);
+      });
       print('listening @ $host:$port');
     });
   }

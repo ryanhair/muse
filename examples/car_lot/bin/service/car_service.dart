@@ -2,7 +2,7 @@ part of car_lot;
 
 @Service()
 class CarService {
-  @Inject
+  @Inject()
   CarRepo carRepo;
   
   Stream<Car> getAll() {

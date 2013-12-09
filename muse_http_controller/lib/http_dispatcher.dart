@@ -25,18 +25,22 @@ class HttpRequestDispatcher {
     
     var controller = findController();
     if(controller == null) {
-      throw new HttpResponseNotFoundException();
+      handleException(new HttpResponseNotFoundException());
     }
     else {
       runController(controller).then((result) {
         new JsonResponseMapper().handleResponse(result, this.request.response);
       }).catchError((HttpResponseException err) {
         // An exception occurred, report to the user
-        request.response.statusCode = err.errorCode;
-        request.response.reasonPhrase = err.message;
-        request.response.close();
+        handleException(err);
       }, test: (e) => e is HttpResponseException);
     }
+  }
+  
+  void handleException(HttpResponseException err) {
+    request.response.statusCode = err.errorCode;
+    request.response.reasonPhrase = err.message;
+    request.response.close();
   }
   
   /**

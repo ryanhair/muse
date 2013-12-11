@@ -30,8 +30,10 @@ packages:
     source: hosted
     version: "0.1.11"
   muse_core:
-    description: muse_core
-    source: hosted
+    description:
+      path: "../muse_core"
+      relative: true
+    source: path
     version: "0.1.0"
   path:
     description: path

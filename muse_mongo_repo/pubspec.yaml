@@ -1,10 +1,11 @@
 name: muse_mongo_repo
 author: Ryan Hair <ryandhair@gmail.com>
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/ryanhair/muse
 description: Mongo repository implementation for Muse framework
 documentation: https://github.com/ryanhair/muse
 dependencies:
   mongo_dart: 0.1.35
-  muse_core: 0.1.0
+  muse_core:
+    path: ../muse_core
   uuid: 0.2.1

@@ -5,4 +5,5 @@ homepage: https://github.com/ryanhair/muse
 description: Http controller implementation for Muse framework
 documentation: https://github.com/ryanhair/muse
 dependencies:
-  muse_core: 0.1.0
+  muse_core:
+    path: ../muse_core

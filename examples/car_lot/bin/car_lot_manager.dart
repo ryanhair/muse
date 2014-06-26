@@ -12,7 +12,7 @@ part 'service/car_service.dart';
 part 'repository/car_repository.dart';
 
 void main() {
-  MongoRepositoryBase.setDb('mongodb://ryandhair@gmail.com:password@ds049538.mongolab.com:49538/car_lot');
+  MongoRepositoryBase.setDb('mongodb://ryandhair:test@ds049538.mongolab.com:49538/car_lot');
   Muse.init();
   HttpController.init('localhost', 8005);
 }

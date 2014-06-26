@@ -4,7 +4,7 @@ library muse.repo.mongo;
 import 'dart:mirrors';
 import 'dart:async';
 import 'package:mongo_dart/mongo_dart.dart';
-import 'package:uuid/uuid.dart';
+import 'package:uuid/uuid_server.dart';
 import 'package:muse_core/muse.dart';
 
 class MongoRepositoryBase {

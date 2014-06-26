@@ -4,27 +4,43 @@ packages:
   analyzer:
     description: analyzer
     source: hosted
-    version: "0.10.2"
+    version: "0.13.6"
   angular:
     description: angular
     source: hosted
-    version: "0.9.2"
+    version: "0.12.0"
   args:
     description: args
     source: hosted
-    version: "0.9.0"
+    version: "0.10.0+2"
+  barback:
+    description: barback
+    source: hosted
+    version: "0.13.0"
+  bignum:
+    description: bignum
+    source: hosted
+    version: "0.0.5"
   browser:
     description: browser
     source: hosted
-    version: "0.9.0"
+    version: "0.10.0+2"
   bson:
     description: bson
     source: hosted
-    version: "0.1.15"
+    version: "0.1.18"
   cipher:
     description: cipher
     source: hosted
-    version: "0.4.0"
+    version: "0.7.1"
+  code_transformers:
+    description: code_transformers
+    source: hosted
+    version: "0.1.4+1"
+  collection:
+    description: collection
+    source: hosted
+    version: "0.9.3+1"
   crypto:
     description: crypto
     source: hosted
@@ -32,7 +48,7 @@ packages:
   di:
     description: di
     source: hosted
-    version: "0.0.28"
+    version: "0.0.40"
   fixnum:
     description: fixnum
     source: hosted
@@ -40,19 +56,19 @@ packages:
   html5lib:
     description: html5lib
     source: hosted
-    version: "0.9.1"
+    version: "0.10.0"
   intl:
     description: intl
     source: hosted
-    version: "0.9.0"
+    version: "0.9.10"
   js:
     description: js
     source: hosted
-    version: "0.2.0"
+    version: "0.2.2"
   logging:
     description: logging
     source: hosted
-    version: "0.9.0"
+    version: "0.9.1+1"
   mongo_dart:
     description: mongo_dart
     source: hosted
@@ -60,33 +76,33 @@ packages:
   mongo_dart_query:
     description: mongo_dart_query
     source: hosted
-    version: "0.1.11"
+    version: "0.1.12"
+  more:
+    description: more
+    source: hosted
+    version: "1.2.1"
   muse_core:
     description:
       path: "../../muse_core"
       relative: true
     source: path
-    version: "0.0.0"
+    version: "0.1.0"
   muse_http_controller:
     description:
       path: "../../muse_http_controller"
       relative: true
     source: path
-    version: "0.0.0"
+    version: "0.1.2"
   muse_mongo_repo:
     description:
       path: "../../muse_mongo_repo"
       relative: true
     source: path
-    version: "0.0.0"
-  mustache:
-    description: mustache
-    source: hosted
-    version: "0.1.6"
+    version: "0.1.1"
   path:
     description: path
     source: hosted
-    version: "0.9.0"
+    version: "1.2.1"
   perf_api:
     description: perf_api
     source: hosted
@@ -94,23 +110,15 @@ packages:
   route_hierarchical:
     description: route_hierarchical
     source: hosted
-    version: "0.4.10"
+    version: "0.4.21"
   source_maps:
     description: source_maps
     source: hosted
-    version: "0.9.0"
+    version: "0.9.2+1"
   stack_trace:
     description: stack_trace
     source: hosted
-    version: "0.9.0"
-  unittest:
-    description: unittest
-    source: hosted
-    version: "0.9.0"
-  unmodifiable_collection:
-    description: unmodifiable_collection
-    source: hosted
-    version: "0.9.0"
+    version: "0.9.3+2"
   utf:
     description: utf
     source: hosted
@@ -118,4 +126,8 @@ packages:
   uuid:
     description: uuid
     source: hosted
-    version: "0.2.1"
+    version: "0.3.2"
+  web_components:
+    description: web_components
+    source: hosted
+    version: "0.3.5"

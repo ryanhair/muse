@@ -1,5 +1,6 @@
 library muse.core;
 
+@MirrorsUsed(symbols:"*", metaTargets: const ['Component', 'Model'])
 import 'dart:mirrors';
 
 part 'injector/injector.dart';

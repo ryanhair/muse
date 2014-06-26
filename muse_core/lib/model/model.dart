@@ -30,7 +30,7 @@ class _Model {
       var n = new Map();
       model.forEach((k, v) {
         if(k is! String) {
-          throw new Exception('Map keys must be of type of String to be converted to basic object');
+          throw new Exception('Map keys must be of type String to be converted to basic object');
         }
         n[k] = toPrimitive(v);
       });
@@ -45,7 +45,7 @@ class _Model {
     reflection.type.declarations
       .keys
       .where((Symbol name) {
-        return reflection.type.declarations[name] is VariableMirror && !reflection.type.declarations[name].isPrivate;
+        return reflection.type.declarations[name] is VariableMirror && !reflection.type.declarations[name].isPrivate && !(reflection.type.declarations[name] as VariableMirror).isStatic;
       })
       .forEach((Symbol name) {
         var val = reflection.getField(name).reflectee;
